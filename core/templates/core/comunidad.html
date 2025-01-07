@@ -1,0 +1,127 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block titlepage %}
+Comunidad 
+{% endblock %}
+
+{% block principal %}
+
+    <!-- Details Hero Section Begin -->
+    <section class="details-hero-section set-bg" data-setbg="{% static 'core/img/details/build-banner.jpg' %}"">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="details-hero-text">
+                        <div class="label"><span>Hermandad de la Hoguera</span></div>
+                        <div class="label"><span>Comunidad</span></div>
+                        <h3>Comunidad: aqui puedes compartir tus aventuras y experiencias</h3>
+                        <ul>
+                            <li>by <span>Admin</span></li>
+                            <li><i class="fa fa-clock-o"></i> Noviembre, 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Details Hero Section End -->
+
+    <!-- Details Post Section Begin -->
+    <section class="details-post-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 p-0">
+                    <div class="details-text gallery-page">
+                        <div class="dt-title-gallery details-hero-text">
+                            <div class="label"><span>Comunidad</span></div>
+                            <h3>Bienvenidos al apartado de Comunidad</h3>
+                            <ul>
+                                <li>by <span>Admin</span></li>
+                                <li><i class="fa fa-clock-o"></i> 30 de Noviembre, 2024</li>
+                            </ul>
+                        </div>
+                        <div class="dt-desc">
+                            <p>Este es el espacio donde todos los amantes de la saga de Dark Souls y Elden Ring pueden compartir sus experiencias, consejos y opiniones. Sabemos que cada uno de nosotros tiene su propia historia con esos momentos épicos y desafiantes que nos han marcado en el juego. ¿Cuál ha sido el jefe que más te ha costado vencer? ¿Recuerdas alguna batalla que te dejó sin aliento la primera vez que la enfrentaste?</p>
+                            <p>Compartenos, ¿qué es lo que más te gusta de la saga Dark Souls? ¿Cuál es tu zona favorita del juego? Visita nuestra Galería (<a href="{% url 'categoriassouls' %}">ver más</a>) y comparte cuál de todas las zonas que hemos destacado te impresionó más la primera vez que llegaste a ella. ¿Qué lugar crees que deberíamos añadir para que otros jugadores puedan disfrutarlo también?</p>
+                            
+                        </div>
+                        <div class="dt-item mt-5 mb-5">
+                            <h5>Compartenos tus experiencias!</h5>
+                                <p>Queremos escuchar tus historias y ayudarte a superar esos retos. Comparte tus experiencias en la sección de comentarios, donde podrás debatir con otros jugadores, intercambiar estrategias y encontrar apoyo en la comunidad, no olvides que contamos con el apartado de Builds (<a href="{% url 'builds' %}">ver más</a>) en donde tambien te puedes informar. Juntos, ¡hacemos frente a los desafíos de From Software!</p>
+                        </div>
+                        <div class="dt-tags">
+                            <a href="{% url 'contacto' %}"><span>Envianos tu Feedback Aquí</span></a>
+                        </div>
+                        <div class="dt-comment">
+                            <h4>Comentarios</h4>
+                            {% for x in listaComentarios %}
+                            <div class="dc-item">
+                                <div class="dc-pic">
+                                    {% if x.autor.foto %}
+                                    <img src="{{ x.autor.foto.url }}" alt="Foto de {{ x.autor.nombre }}" >
+                                    {% else %}
+                                    <img src="{% static 'core/img/details/comment/person-face.png' %}" alt="">
+                                    {% endif %}
+                                </div>
+                                <div class="dc-text">
+                                    <h5>{{x.autor}}</h5>
+                                    <span class="c-date">{{x.fecha}}
+                                        {% if request.session.correo_electronico and request.session.correo_electronico == x.autor.correo_electronico %}
+                                        &nbsp;&nbsp;
+                                        <a onclick="confirmDelete({{ x.id }})" class="text-light" style="cursor: pointer;" >Eliminar</a>
+                                        {% endif %}
+                                    </span>
+                                    <p>{{x.contenidos}}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="dt-leave-comment">
+                            <h4>Interactúa con la comunidad!!</h4>
+                            <form class="comentario-form" id="comentario-form" method="POST" action="{% url 'comentar' %}">
+                                {% csrf_token %}
+                                <textarea class="text-light" name="contenido" id="contenido"  placeholder="Escribe aquí tu comentario" required></textarea>
+                                <button type="submit">Comentar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7">
+                    <div class="sidebar-option">
+                        <div class="social-media">
+                            <div class="section-title">
+                                <h5>Redes Sociales</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-facebook"></i></div>
+                                    <span class="text-white"><a href="https://es-la.facebook.com/fromsoftware.jp/about/">Facebook</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="bi bi-twitter-x"></i></div>
+                                    <span class="text-white"><a href="https://x.com/fromsoftware_pr?lang=es">Twitter</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-youtube-play"></i></div>
+                                    <span class="text-white"><a href="https://www.youtube.com/user/FromSoftwareInc">Youtube<a/></span>
+                                    <div class="follow">2,3k Subs</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-instagram"></i></div>
+                                    <span><a class="text-white" href="https://www.instagram.com/fromsoftware_jp/?hl=es">Instagram</a></span>
+                                    <div class="follow">2,6k Follow</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Details Post Section End -->
+
+{% endblock %}

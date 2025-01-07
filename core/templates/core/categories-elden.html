@@ -1,0 +1,102 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block titlepage %}
+Galeria | Elden Ring
+{% endblock %}
+
+{% block principal %}
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg spad" data-setbg="{% static 'core/img/breadcrumb-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h3>Elden Ring: <span>Explorando el Arte del Juego</span></h3>
+                        <div class="bt-option">
+                            <a href="{% url 'index' %}">Home</a>
+                            <span>Galeria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Categories Grid Section Begin -->
+    <section class="categories-grid-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 p-0">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cg-item">
+                                <div class="cg-pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-5.jpg' %}">
+                                    <div class="label"><span>Elden Ring</span></div>
+                                </div>
+                                <div class="cg-text">
+                                    <h5><a href="{% url 'GalleryLeyndell' %}">La Capital Real Leyndell</a></h5>
+                                    <ul> 
+                                        <li>by <span>Admin</span></li>
+                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    </ul>
+                                    <p>La Capital Real (Leyndell) es uno de los lugares más imponentes y significativos en Elden Ring, tanto por su arquitectura como por su importancia en la narrativa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cg-item">
+                                <div class="cg-pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-6.png' %}">
+                                    <div class="label"><span>Dark Souls I</span></div>
+                                </div>
+                                <div class="cg-text">
+                                    <h5><a href="{% url 'GalleryNokron' %}">El Palacio de Nokron</a></h5>
+                                    <ul>
+                                        <li>by <span>Admin</span></li>
+                                        <li><i class="fa fa-clock-o"></i> Nov 15, 2024</li>
+                                    </ul>
+                                    <p>El Palacio de Nokron, la Ciudad Eterna es uno de los lugares más enigmáticos y visualmente fascinantes de Elden Ring. Este antiguo reino subterráneo, lleno de misterio y belleza, destaca por su arquitectura surrealista y su atmósfera onírica.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 p-0">
+                    <div class="sidebar-option">
+                        <div class="social-media">
+                            <div class="section-title">
+                                <h5>Social media</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-facebook"></i></div>
+                                    <span class="text-white"><a href="https://es-la.facebook.com/fromsoftware.jp/about/">Facebook</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="bi bi-twitter-x"></i></div>
+                                    <span class="text-white"><a href="https://x.com/fromsoftware_pr?lang=es">Twitter</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-youtube-play"></i></div>
+                                    <span class="text-white"><a href="https://www.youtube.com/user/FromSoftwareInc">Youtube<a/></span>
+                                    <div class="follow">2,3k Subs</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-instagram"></i></div>
+                                    <span><a class="text-white" href="https://www.instagram.com/fromsoftware_jp/?hl=es">Instagram</a></span>
+                                    <div class="follow">2,6k Follow</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Grid Section End -->
+{% endblock %}

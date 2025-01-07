@@ -1,0 +1,58 @@
+{% extends 'core/base.html' %} {% load static %} {% block titlepage %} Contacto
+| Feedback {% endblock %} {% block principal %}
+
+<!-- Breadcrumb Section Begin -->
+<section
+  class="breadcrumb-section set-bg spad"
+  data-setbg="{% static 'core/img/breadcrumb-bg.jpg' %}"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="breadcrumb-text">
+          <h3>Feedback</h3>
+          <div class="bt-option">
+            <a href="{% url 'index' %}">Home</a>
+            <span>Feedback</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Breadcrumb Section End -->
+
+<!-- Contact Section Begin -->
+<section class="contact-section spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="contact-text">
+          <div class="contact-title">
+            <h3>Envíanos tu feedback</h3>
+            <p>
+              ¡Tu opinión es muy importante para nosotros! Queremos ofrecerte la
+              mejor experiencia posible en nuestro sitio, y para lograrlo,
+              necesitamos escuchar tus comentarios. Te invitamos a enviarnos tu
+              feedback sobre lo que te gusta, lo que podemos mejorar o cualquier
+              sugerencia que tengas. ¡Tu voz nos ayuda a crecer y a brindarte un
+              mejor servicio!
+            </p>
+          </div>
+          <div class="contact-form">
+            <div class="dt-leave-comment">
+              <form  class="feedback-form" id="feedback-form" method="POST" action="{% url 'enviar_feedback' %}">
+                {% csrf_token %}
+                <textarea name="contenido" id="contenido" placeholder="Escríbenos tú feedback aquí." required></textarea>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+{% endblock %}

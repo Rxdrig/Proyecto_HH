@@ -1,0 +1,324 @@
+{% extends 'core/base.html' %}
+{% load static %} 
+
+{% block titlepage %}
+Builds | Dark Souls I
+{% endblock %} 
+
+{% block principal %}
+
+<!-- Breadcrumb Section Begin -->
+<section
+  class="breadcrumb-section set-bg spad"
+  data-setbg="{% static 'core/img/banner-1.jpg' %}"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="breadcrumb-text">
+          <h3>Builds: <span>Dark Souls I</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Breadcrumb Section End -->
+
+<!-- Categories list Section Begin -->
+<section class="categories-list-section spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 p-0">
+        <div class="cl-item">
+          <div class="cl-pic">
+            <img src="{% static 'core/img/builds/alastor-build.png' %}" alt="" />
+          </div>
+          <div class="cl-text">
+            <div class="label"><span>Build</span></div>
+            <h5><a href="{% url 'buildsAlastor'  %}">Alastor</a></h5>
+            <ul>
+              <li>by <span>Admin</span></li>
+              <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+              <li><i class="fa fa-comment-o"></i> 20</li>
+            </ul>
+            <p>
+                Esta es una build muy versátil (siempre con rodamiento medio y combos rápidos) 
+                que te otorga una increíble defensa y postura, combos cuerpo a cuerpo con
+                daño de fuego, daño a distancia con relámpagos mediante el arco y
+                daño mágico a distancia con hechizos.
+            </p>
+          </div>
+        </div>
+        <div class="cl-item">
+          <div class="cl-pic">
+            <img src="{% static 'core/img/builds/silmeria-build.png' %}" alt="" />
+          </div>
+          <div class="cl-text">
+            <div class="label"><span>Build</span></div>
+            <h5><a href="{% url 'buildsSilmeria' %}">Silmeria Valkyrie</a></h5>
+            <ul>
+              <li>by <span>Admin</span></li>
+              <li><i class="fa fa-clock-o"></i> Nov 12, 2024</li>
+              <li><i class="fa fa-comment-o"></i> 20</li>
+            </ul>
+            <p>
+              Inspirada en Silmeria, la valquiria más joven del juego Valkyrie
+              Profile 2, esta construcción se centra únicamente en ataques a
+              distancia. 
+            </p>
+          </div>
+        </div>
+        <div class="cl-item">
+          <div class="cl-pic">
+            <img src="{% static 'core/img/builds/reaper-build.png' %}" alt="" />
+          </div>
+          <div class="cl-text">
+            <div class="label"><span>Build</span></div>
+            <h5><a href="{% url 'buildsReaper' %}">Grim Reaper</a></h5>
+            <ul>
+              <li>by <span>Admin</span></li>
+              <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+              <li><i class="fa fa-comment-o"></i> 20</li>
+            </ul>
+            <p>
+              Inspirada en la figura de la Parca, esta construcción, Grim
+              Reaper, está diseñada para aquellos que buscan sembrar el caos y
+              la destrucción en el campo de batalla.
+            </p>
+          </div>
+        </div>
+        <div class="cl-item">
+          <div class="cl-pic">
+            <img src="{% static 'core/img/builds/belldany-build.png' %}" alt="" />
+          </div>
+          <div class="cl-text">
+            <div class="label"><span>Build</span></div>
+            <h5><a href="{% url 'buildsBelldandy' %}">Belldandy</a></h5>
+            <ul>
+              <li>by <span>Admin</span></li>
+              <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+              <li><i class="fa fa-comment-o"></i> 20</li>
+            </ul>
+            <p>
+              ¡Eres una Diosa de Primera Clase, Belldandy! ¡Libera tu poder
+              sagrado sobre este mundo!
+            </p>
+          </div>
+        </div>
+        <div class="cl-item">
+          <div class="cl-pic">
+            <img src="{% static 'core/img/builds/tanque-build.png' %}" alt="" />
+          </div>
+          <div class="cl-text">
+            <div class="label"><span>Build</span></div>
+            <h5><a href="{% url 'buildsTanque' %}">Tanque Real</a></h5>
+            <ul>
+              <li>by <span>Comunidad</span></li>
+              <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+              <li><i class="fa fa-comment-o"></i> 20</li>
+            </ul>
+            <p>
+              Esta es una versión creada por jugadores para Dark Souls. Si quieres ayuda para crear tu propia versión.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-7 p-0">
+        <div class="sidebar-option">
+          <div class="social-media">
+            <div class="section-title">
+              <h5>Redes Sociales</h5>
+            </div>
+            <ul>
+              <li>
+                <div class="sm-icon"><i class="fa fa-facebook"></i></div>
+                <span class="text-white"><a href="https://es-la.facebook.com/fromsoftware.jp/about/">Facebook</a></span>
+                <div class="follow">1,2k Follow</div>
+              </li>
+              <li>
+                <div class="sm-icon"><i class="bi bi-twitter-x"></i></div>
+                <span class="text-white"><a href="https://x.com/fromsoftware_pr?lang=es">Twitter</a></span>
+                <div class="follow">1,2k Follow</div>
+              </li>
+              <li>
+                <div class="sm-icon"><i class="fa fa-youtube-play"></i></div>
+                <span class="text-white"><a href="https://www.youtube.com/user/FromSoftwareInc">Youtube<a/></span>
+                <div class="follow">2,3k Subs</div>
+              </li>
+              <li>
+                <div class="sm-icon"><i class="fa fa-instagram"></i></div>
+                <span><a class="text-white" href="https://www.instagram.com/fromsoftware_jp/?hl=es">Instagram</a></span>
+                <div class="follow">2,6k Follow</div>
+              </li>
+            </ul>
+          </div>
+          <div class="hardware-guides">
+            <div class="section-title">
+              <h5>Builds Destacadas</h5>
+            </div>
+            <div class="trending-item">
+              <div class="ti-pic">
+                <img
+                  src="{% static 'core/img/builds/alastor-build.png' %}"
+                  alt=""
+                  style="max-width: 70px"
+                />
+              </div>
+              <div class="ti-text">
+                <h6><a href="#">Alastor</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 12</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="ti-pic">
+                <img
+                  src="{% static 'core/img/builds/silmeria-build.png' %}"
+                  alt=""
+                  style="max-width: 70px"
+                />
+              </div>
+              <div class="ti-text">
+                <h6><a href="#">Silmeria Valkyrie</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 12</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="ti-pic">
+                <img
+                  src="{% static 'core/img/builds/reaper-build.png' %}"
+                  alt=""
+                  style="max-width: 70px"
+                />
+              </div>
+              <div class="ti-text">
+                <h6><a href="#">Grim Reaper</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 12</li>
+                </ul>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="ti-pic">
+                <img
+                  src="{% static 'core/img/builds/belldany-build.png' %}"
+                  alt=""
+                  style="max-width: 70px"
+                />
+              </div>
+              <div class="ti-text">
+                <h6><a href="{% url 'buildsBelldandy' %}">Belldandy</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 12</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="best-of-post">
+            <div class="section-title">
+              <h5>Builds Mejor Valoradas</h5>
+            </div>
+            <div class="bp-item">
+              <div class="bp-loader">
+                <div class="loader-circle-wrap">
+                  <div class="loader-circle">
+                    <span
+                      class="circle-progress-1"
+                      data-cpid="id-1"
+                      data-cpvalue="95"
+                      data-cpcolor="#c20000"
+                    ></span>
+                    <div class="review-point">9.5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="bp-text">
+                <h6><a href="#">Alastor</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 20</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bp-item">
+              <div class="bp-loader">
+                <div class="loader-circle-wrap">
+                  <div class="loader-circle">
+                    <span
+                      class="circle-progress-1"
+                      data-cpid="id-2"
+                      data-cpvalue="85"
+                      data-cpcolor="#c20000"
+                    ></span>
+                    <div class="review-point">8.5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="bp-text">
+                <h6><a href="#">Silmeria Valkyrie</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 20</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bp-item">
+              <div class="bp-loader">
+                <div class="loader-circle-wrap">
+                  <div class="loader-circle">
+                    <span
+                      class="circle-progress-1"
+                      data-cpid="id-3"
+                      data-cpvalue="80"
+                      data-cpcolor="#c20000"
+                    ></span>
+                    <div class="review-point">8.0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="bp-text">
+                <h6><a href="#">Grim Reaper</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 20</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bp-item">
+              <div class="bp-loader">
+                <div class="loader-circle-wrap">
+                  <div class="loader-circle">
+                    <span
+                      class="circle-progress-1"
+                      data-cpid="id-4"
+                      data-cpvalue="75"
+                      data-cpcolor="#c20000"
+                    ></span>
+                    <div class="review-point">7.5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="bp-text">
+                <h6><a href="#">Belldandy</a></h6>
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                  <li><i class="fa fa-comment-o"></i> 20</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Categories List Section End -->
+
+{% endblock %}

@@ -1,0 +1,400 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block titlepage %}
+Build de Alastor
+{% endblock %}
+
+{% block principal %}
+
+<!-- Details Hero Section Begin -->
+<section class="details-hero-section set-bg" data-setbg="{% static 'core/img/details/build-banner.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="details-hero-text">
+                    <div class="label"><span>Dark Souls I</span></div>
+                    <h3>Build: Grim Reaper</h3>
+                    <ul>
+                        <li>by <span>Admin</span></li>
+                        <li><i class="fa fa-clock-o"></i> Nov 15, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Details Hero Section End -->
+
+<!-- Details Post Section Begin -->
+<section class="details-post-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 p-0">
+                <div class="details-text">
+                    <div class="dt-desc">
+                        <div class="section-title">
+                            <h5>Descripción</h5>
+                        </div>
+                        <p><strong>Nombre de la Build:</strong> Grim Reaper</p>
+                        <p><strong>Nivel de Build:</strong> 80 (Nuevo Juego) - 145 (NG+)</p>
+                        <p><strong>Enfoque de Build:</strong> PvE</p>
+                        <p><strong>Clase:</strong> Viajero</p>
+                        <p>Inspirada en la figura de la Parca, esta construcción, Grim Reaper, está diseñada para aquellos que buscan sembrar el caos y la destrucción en el campo de batalla. Con un enfoque exclusivo en PvE, esta build se centra en el uso de poderosas armas de corte, magia oscura y habilidades que absorben vida, todo mientras el personaje se presenta como un ser sombrío y mortal.</p>
+                    </div>
+                    <div class="dt-pic-item mt-5">
+                        <div class="dp-text">
+                            <div class="section-title">
+                                <h5>Atributos (Nivel 80 - 145 )</h5>
+                            </div>
+                            <p><strong>Atributos a nivel 80 (Final de Juego):</strong> </p>
+                            <ul>
+                                <li>Vitalidad: 28</li>
+                                <li>Sintonización: 19</li>
+                                <li>Resistencia: 25</li>
+                                <li>Fuerza: 16</li>
+                                <li>Destreza: 28</li>
+                                <li>Resistencia: 12</li>
+                                <li>Inteligencia: 27</li>
+                                <li>Fe: 8</li>
+                                <li>Humanidad: 1</li>
+                            </ul>
+                            <p><strong>Atributos a nivel 145 (Final de NG+):</strong> </p>
+                            <ul>
+                                <li>Vitalidad: 36</li>
+                                <li>Sintonización: 23</li>
+                                <li>Resistencia: 46</li>
+                                <li>Fuerza: 20</li>
+                                <li>Destreza: 40</li>
+                                <li>Resistencia: 12</li>
+                                <li>Inteligencia: 43</li>
+                                <li>Fe: 8</li>
+                                <li>Humanidad: 1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-pic">
+                            <img src="{% static 'core/img/builds/Reaper-1.png' %}" alt="">
+                        </div>
+                        <div class="dp-text mt-5">
+                            <div class="section-title">
+                                <h5>Equipo</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Mano derecha:</strong> Guadaña de Cazavidas / Catalizador de Manus</li>
+                                <li><strong>Mano izquierda:</strong> Escudo Sangriento / Talismán de Velka</li>
+                                <li><strong>Cabeza:</strong> Máscara Oscura</li>
+                                <li><strong>Pecho:</strong> Capa Negra de Hilo Dorado</li>
+                                <li><strong>Manos:</strong> Guantes Negros de Hilo Dorado</li>
+                                <li><strong>Piernas:</strong> Falda Negra de Hilo Dorado</li>
+                                <li><strong>Anillo 1:</strong> Anillo de Favor y Protección</li>
+                                <li><strong>Anillo 2:</strong> Anillo de Mordisco Sangriento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-text mt-5">
+                            <div class="section-title">
+                                <h5>Armas</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Guadaña de Cazavidas [Normal +5]: </strong> Forjada a partir de una Guadaña o Alabarda +10 y el Alma de Priscilla en el Herrero Gigante en Anor Londo.</li>
+                                <li><strong>Catalizador de Manus: </strong> Ascender cualquier catalizador junto con el Alma de Manus (jefe final del DLC) en el Herrero Gigante en Anor Londo.</li>
+                                <li><strong>Escudo Sangriento [Normal +15]: </strong> En el Mundo Pintado de Ariamis, en el puente cerca del Dragón No Muerto.</li>
+                                <li><strong>Talismán de Velka: :</strong> Cómpralo a Oswald de Carim (5000 almas).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-text mt-5">
+                            <div class="section-title">
+                                <h5>Armaduras</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Máscara Oscura: </strong> Se obtiene en el Pacto de los Espectros Oscuros al alcanzar el Rango 2 (30 humanidades ofrecidas).</li>
+                                <li><strong>Capa, Guantes y Falda Negra de Hilo Dorado:  </strong> Ubicadas en las Ruinas de los Demonios, en la sala del jefe Descarga Incesante.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-text mt-5">
+                            <div class="section-title">
+                                <h5>Anillos</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Anillo de Favor y Protección:</strong> Lo suelta Lautrec; espera a que mate a Anastacia y luego invade su mundo en Anor Londo.</li>
+                                <li><strong>Anillo de Mordisco Sangriento:</strong> Cómpralo a Oswald de Carim (10000 almas).</li>
+                                <li><strong>Anillo de Protección de Acero:</strong> En la Fortaleza de Sen.</li>
+                                <li><strong>Anillo de Serpiente Dorada Codiciosa:</strong> En la Fortaleza de Sen.</li>
+                                <li><strong>Anillo de Hierro Oxidado:</strong> En la segunda visita al Asilo de los No Muertos.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-text mt-5">
+                            <div class="section-title">
+                                <h5>Hechizos Recomendados</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Luz de Fundido:</strong> Cómpralo a Dusk de Oolacile (1000 almas) en el lago, después de matar a la hidra y al gólem.</li>
+                                <li><strong>Remedio:</strong> Cruza la rama en la cima de la noria en Ciudad Infestada.</li>
+                                <li><strong>Flecha de Alma, Gran Flecha de Alma, Flecha de Alma Pesada:</strong> Cómpralas a Griggs o Logan.</li>
+                                <li><strong>Danza de la Espada del Nexo:</strong> Únete al pacto de Espada del Nexo.</li>
+                                <li><strong>Gran Danza de la Espada del Nexo:</strong> Rango 1 en el pacto de Espada del Nexo (10 Ojos de Muerte ofrecidos).</li>
+                                <li><strong>Pan Negro:</strong> Encontrado en un cadáver detrás de un Hechicero de Oolacile en las Profundidades del Abismo.</li>
+                                <li><strong>Orbe Oscuro:</strong> Encontrado en la Ciudad de Oolacile.</li>
+                                <li><strong>Masa de Alma Cristalizada Perseguidora:</strong> Cómpralo a Sombrero Grande Logan en la biblioteca de los Archivos del Duque después de liberarlo (30000 almas).</li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-text mt-5">
+                            <div class="section-title">
+                                <h5>Consumibles</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Flor Verde:</strong> La sueltan las Ranas en el Jardín de Raíces Oscuras o cómprala al Mercader Crestfallen (1000 almas).</li>
+                                <li><strong>Terrón de Musgo Rojo Sangre:</strong> Soltado por los Ents en el Jardín de Raíces Oscuras o cómpralo a la Mercader No Muerta (300 almas).</li>
+                                <li><strong>Bomba de Fuego Negra:</strong> Cómprala al Mercader Crestfallen (500 almas), útil para la hidra y algunos grupos de enemigos.</li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-text mt-5">
+                            <div class="section-title">
+                                <h5>Pactos</h5>
+                            </div>
+                            <ul>
+                                <li><strong>Pacto de los Espectros Oscuros:</strong> NO hables con Frampt después de obtener el Recipiente del Señor. Mata al Gran Lobo Gris Sif para recibir su anillo, el Anillo de Artorias, el cual te permitirá acceder al Abismo. Puedes matar a Ingward para recibir la llave que abre la puerta al Abismo. Al entrar al Abismo se inicia la batalla contra los Cuatro Reyes; después de vencerlos, habla con Kaathe, el primigenio dragón, en el Abismo. Al responder SÍ, podrás ingresar al Pacto después de colocar el Recipiente del Señor y regresar al Abismo (30 humanidades para subir de rango).</li>
+                                <li><strong>Pacto de Siervo del Nexo:</strong> Puedes unirte y mejorar este pacto antes de derrotar a Nito. Necesitas un Ojo de Muerte en tu inventario para unirte. Los Ojos de Muerte se pueden farmear de los Basiliscos, Patches puede vender 3, hay 3 cerca de la cripta para teletransporte y 3 más en la Tumba de los Gigantes junto al Gran Ascua Divina.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dt-pic-item">
+                        <div class="dp-text mt-5 mb-5">
+                            <div class="section-title">
+                                <h5>Ruta Sugerida</h5>
+                            </div>
+                            <ul>
+                                <li>Saquea el cementerio en busca de nuevo equipo y obtén el Alma de Guardiana de Fuego en las Ruinas de Nuevo Londo.</li>
+                                <li>Obtén la Gran Guadaña en las Catacumbas (mejóralo a +10 eventualmente), sin activar la hoguera; regresa al Santuario del Enlace de Fuego.</li>
+                                <li>Consigue el hechizo Remedio en Ciudad Infestada o más tarde, cruza el Valle de los Dragones y sube el elevador; no actives la hoguera.</li>
+                                <li>Limpia el Burgo de los No Muertos y su jefe, luego continúa hacia la Parroquia de los No Muertos y su jefe; compra el anillo y el talismán de Oswald.</li>
+                                <li>Compra la Cresta de Andre por 20000 almas y abre la puerta en el jardín, eliminando a los invasores.</li>
+                                <li>En las Profundidades, farmea al menos 30 humanidades de las ratas y abre la puerta a Ciudad Infestada con la llave del jefe.</li>
+                                <li>Desciende a través de Ciudad Infestada y llega al Dominio de Quelaag; después, ve a las Ruinas de los Demonios y toma el set Negro de Hilo Dorado.</li>
+                                <li>Termina las Catacumbas para el Rito de Atizar y avanza por la Fortaleza de Sen para llegar a Anor Londo.</li>
+                                <li>Invade el mundo de Lautrec para recibir su anillo y completa el Mundo Pintado de Ariamis.</li>
+                                <li>Vuelve al lago, termina el Jardín y el Lago de Raíces Oscuras, mata al Mariposa de la Luna y al lobo Sif.</li>
+                                <li>Ve a las Ruinas de Nuevo Londo, habla con Ingward y entra en el Abismo.</li>
+                                <li>Usa la cripta en las Catacumbas para encontrarte con Nito, únete a su pacto y obtén los milagros.</li>
+                                <li>Vuelve a Anor Londo y termina los Archivos del Duque y la Cueva Cristalina.</li>
+                                <li>Termina el DLC y, en cualquier orden, Izalith Perdida, la Tumba de los Gigantes, el Gran Hueco (opcional), Lago de Ceniza (opcional) y Tumba de Luna Oscura (opcional).</li>
+                                <li>Mata a todos los NPCs y Guardianas de Fuego para obtener objetos y almas extra (opcional).</li>
+                                <li>Entra en el Horno de la Primera Llama y termina el juego (el nivel mínimo recomendado antes de un NG+ es 80).</li>                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dt-tags">
+                        <a href="#"><span>Gaming</span></a>
+                        <a href="#"><span>Builds</span></a>
+                        <a href="#"><span>Dark Souls</span></a>
+                    </div>
+                    <div class="dt-related-post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="{% url 'builds' %}" class="rp-prev">
+                                    <span>Volver a Builds</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-7">
+                <div class="sidebar-option">
+                    <div class="social-media">
+                        <div class="section-title">
+                            <h5>Redes Sociales</h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="sm-icon"><i class="fa fa-facebook"></i></div>
+                                <span class="text-white"><a href="https://es-la.facebook.com/fromsoftware.jp/about/">Facebook</a></span>
+                                <div class="follow">1,2k Follow</div>
+                            </li>
+                            <li>
+                                <div class="sm-icon"><i class="bi bi-twitter-x"></i></div>
+                                <span class="text-white"><a href="https://x.com/fromsoftware_pr?lang=es">Twitter</a></span>
+                                <div class="follow">1,2k Follow</div>
+                            </li>
+                            <li>
+                                <div class="sm-icon"><i class="fa fa-youtube-play"></i></div>
+                                <span class="text-white"><a href="https://www.youtube.com/user/FromSoftwareInc">Youtube<a/></span>
+                                <div class="follow">2,3k Subs</div>
+                            </li>
+                            <li>
+                                <div class="sm-icon"><i class="fa fa-instagram"></i></div>
+                                <span><a class="text-white" href="https://www.instagram.com/fromsoftware_jp/?hl=es">Instagram</a></span>
+                                <div class="follow">2,6k Follow</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hardware-guides">
+                        <div class="section-title">
+                            <h5>Builds Destacadas</h5>
+                        </div>
+                        <div class="trending-item">
+                            <div class="ti-pic">
+                                <img src="{% static 'core/img/builds/alastor-build.png' %}" alt="" style="max-width: 70px;">
+                            </div>
+                            <div class="ti-text">
+                                <h6><a href="{% url 'buildsAlastor' %}">Alastor</a>
+                                </h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 12</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="ti-pic">
+                                <img src="{% static 'core/img/builds/silmeria-build.png' %}" alt="" style="max-width: 70px;">
+                            </div>
+                            <div class="ti-text">
+                                <h6><a href="{% url 'buildsSilmeria' %}">Silmeria Valkyrie</a></h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 12</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="ti-pic">
+                                <img src="{% static 'core/img/builds/reaper-build.png' %}" alt=""
+                                    style="max-width: 70px;">
+                            </div>
+                            <div class="ti-text">
+                                <h6><a href="{% url 'buildsReaper' %}">Grim Reaper</a>
+                                </h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 12</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="ti-pic">
+                                <img src="{% static 'core/img/builds/belldany-build.png' %}" alt=""
+                                    style="max-width: 70px;">
+                            </div>
+                            <div class="ti-text">
+                                <h6><a href="{% url 'buildsBelldandy' %}">Belldandy</a></h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 12</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insta-media">
+                        <div class="section-title">
+                            <h5>Instagram</h5>
+                        </div>
+                        <div class="insta-pic">
+                            <img src="{% static 'core/img/instagram/ip-1.jpg' %}" alt="">
+                            <img src="{% static 'core/img/instagram/ip-2.jpg' %}" alt="">
+                            <img src="{% static 'core/img/instagram/ip-3.jpg' %}" alt="">
+                            <img src="{% static 'core/img/instagram/ip-4.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="best-of-post">
+                        <div class="section-title">
+                            <h5>Builds Mejor Valoradas</h5>
+                        </div>
+                        <div class="bp-item">
+                            <div class="bp-loader">
+                                <div class="loader-circle-wrap">
+                                    <div class="loader-circle">
+                                        <span class="circle-progress-1" data-cpid="id-1" data-cpvalue="95"
+                                            data-cpcolor="#c20000"></span>
+                                        <div class="review-point">9.5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bp-text">
+                                <h6><a href="#">Alastor</a></h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 20</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bp-item">
+                            <div class="bp-loader">
+                                <div class="loader-circle-wrap">
+                                    <div class="loader-circle">
+                                        <span class="circle-progress-1" data-cpid="id-2" data-cpvalue="85"
+                                            data-cpcolor="#c20000"></span>
+                                        <div class="review-point">8.5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bp-text">
+                                <h6><a href="#">Silmeria Valkyrie</a></h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 20</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bp-item">
+                            <div class="bp-loader">
+                                <div class="loader-circle-wrap">
+                                    <div class="loader-circle">
+                                        <span class="circle-progress-1" data-cpid="id-3" data-cpvalue="80"
+                                            data-cpcolor="#c20000"></span>
+                                        <div class="review-point">8.0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bp-text">
+                                <h6><a href="#">Grim Reaper</a></h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 20</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bp-item">
+                            <div class="bp-loader">
+                                <div class="loader-circle-wrap">
+                                    <div class="loader-circle">
+                                        <span class="circle-progress-1" data-cpid="id-4" data-cpvalue="75"
+                                            data-cpcolor="#c20000"></span>
+                                        <div class="review-point">7.5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bp-text">
+                                <h6><a href="#">Belldandy</a></h6>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    <li><i class="fa fa-comment-o"></i> 20</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Details Post Section End -->
+
+{% endblock %}

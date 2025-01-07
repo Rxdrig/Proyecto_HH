@@ -1,0 +1,799 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block titlepage %}
+Inicio | Hermandad de la Hoguera
+{% endblock %}
+
+{% block principal %}
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="hs-text">
+                        <div class="label"><span>Builds</span></div>
+                        <div class="label"><span>Guias</span></div>
+                        <div class="label"><span>Noticias</span></div>
+                        <h3>Encuentra las mejores guías, builds y consejos para tus juegos favoritos de From Software.</h3>
+                        <div class="ht-meta">
+                            <ul>
+                                <li>Únete a nuestra comunidad y lleva tu experiencia al siguiente nivel.</li>
+                                <li>¡Juega, aprende y comparte!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 offset-xl-2">
+                    <div class="trending-post">
+                        <div class="section-title">
+                            <h5>Posts Populares</h5>
+                        </div>
+                        <div class="trending-slider owl-carousel">
+                            <div class="single-trending-item">
+                                <div class="trending-item">
+                                    <div class="ti-pic">
+                                        <img src="{% static 'core/img/trending/trending-1.png' %}" alt="">
+                                    </div>
+                                    <div class="ti-text">
+                                        <h6><a href="{% url 'postgallery' %}">Irithyll del Valle Boreal</a>
+                                        </h6>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="trending-item">
+                                    <div class="ti-pic">
+                                        <img src="{% static 'core/img/trending/trending-2.png' %}" alt="">
+                                    </div>
+                                    <div class="ti-text">
+                                        <h6><a href="{% url 'GalleryAnor' %}">Anor Londo</a></h6>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="trending-item">
+                                    <div class="ti-pic">
+                                        <img src="{% static 'core/img/trending/trending-3.png' %}" alt="">
+                                    </div>
+                                    <div class="ti-text">
+                                        <h6><a href="{% url 'GalleryAriandel' %}">Cenizas de Ariandel</a>
+                                        </h6>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="trending-item">
+                                    <div class="ti-pic">
+                                        <img src="{% static 'core/img/trending/trending-4.png' %}" alt="">
+                                    </div>
+                                    <div class="ti-text">
+                                        <h6><a href="{% url 'GalleryAmana' %}">Santuario de Amana</a>
+                                        </h6>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="{% static 'core/img/hero/card-1.png' %}"></div>
+            <div class="hs-item set-bg" data-setbg="{% static 'core/img/hero/card-2.png' %}"></div>
+            <div class="hs-item set-bg" data-setbg="{% static 'core/img/hero/card-3.png' %}"></div>
+            <div class="hs-item set-bg" data-setbg="{% static 'core/img/hero/card-4.png' %}"></div>
+            <div class="hs-item set-bg" data-setbg="{% static 'core/img/hero/card-5.png' %}"></div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Latest Preview Section Begin -->
+    <section class="latest-preview-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h5>Builds Dark Souls</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lp-slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="lp-item">
+                            <div class="lp-pic set-bg" data-setbg="{% static 'core/img/builds/alastor-build.png' %}">
+                                <div class="review-loader">
+                                    <div class="loader-circle-wrap">
+                                        <div class="loader-circle">
+                                            <span class="circle-progress" data-cpid="id" data-cpvalue="75"
+                                                data-cpcolor="#c20000"></span>
+                                            <div class="review-point">7.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lp-text">
+                                <h6><a href="{% url 'buildsAlastor' %}">Build Alastor</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="lp-item">
+                            <div class="lp-pic set-bg" data-setbg="{% static 'core/img/builds/reaper-build.png' %}">
+                                <div class="review-loader">
+                                    <div class="loader-circle-wrap">
+                                        <div class="loader-circle">
+                                            <span class="circle-progress" data-cpid="id" data-cpvalue="75"
+                                                data-cpcolor="#c20000"></span>
+                                            <div class="review-point">7.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lp-text">
+                                <h6><a href="{% url 'buildsReaper' %}">Build Reaper</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="lp-item">
+                            <div class="lp-pic set-bg" data-setbg="{% static 'core/img/builds/belldany-build.png' %}">
+                                <div class="review-loader">
+                                    <div class="loader-circle-wrap">
+                                        <div class="loader-circle">
+                                            <span class="circle-progress" data-cpid="id" data-cpvalue="75"
+                                                data-cpcolor="#c20000"></span>
+                                            <div class="review-point">7.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lp-text">
+                                <h6><a href="{% url 'buildsBelldandy' %}">Build Belldandy</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="lp-item">
+                            <div class="lp-pic set-bg" data-setbg="{% static 'core/img/builds/silmeria-build.png' %}">
+                                <div class="review-loader">
+                                    <div class="loader-circle-wrap">
+                                        <div class="loader-circle">
+                                            <span class="circle-progress" data-cpid="id" data-cpvalue="75"
+                                                data-cpcolor="#c20000"></span>
+                                            <div class="review-point">7.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lp-text">
+                                <h6><a href="{% url 'buildsSilmeria' %}">Build Silmeria</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="lp-item">
+                            <div class="lp-pic set-bg" data-setbg="{% static 'core/img/builds/tanque-build.png' %}">
+                                <div class="review-loader">
+                                    <div class="loader-circle-wrap">
+                                        <div class="loader-circle">
+                                            <span class="circle-progress" data-cpid="id" data-cpvalue="75"
+                                                data-cpcolor="#c20000"></span>
+                                            <div class="review-point">7.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lp-text">
+                                <h6><a href="{% url 'buildsTanque' %}">Build Tanque Real</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Preview Section End -->
+
+    <!-- Update News Section Begin -->
+    <section class="update-news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h5><span>Galeria</span></h5>
+                    </div>
+                    <div class="tab-elem">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Todas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Dark Souls</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Elden Ring</a>
+                            </li>
+                        </ul><!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tabs-1" role="tabpanel">
+                                <div class="row">
+                                    <div class="un-slider owl-carousel">
+                                        <div class="col-lg-12">
+                                            <div class="un-big-item set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-1.png' %}">
+                                                <div class="ub-text">
+                                                    <div class="label"><span>Dark Souls</span></div>
+                                                    <h5><a href="{% url 'postgallery' %}">Irithyll del Valle Boreal</a></h5>
+                                                    <ul>
+                                                        <li>by <span>Admin</span></li>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 20</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-2.png' %}">
+                                                            <div class="label"><span>Dark Souls</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryAnor' %}">Anor Londo</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-3.png' %}">
+                                                            <div class="label"><span>Dark Souls</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryAriandel' %}">Cenizas de Ariandel</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-4.png' %}">
+                                                            <div class="label"><span>Dark Souls</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryAmana' %}">Santuario de Amana</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="un-big-item set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-5.jpg' %}">
+                                                <div class="ub-text">
+                                                    <div class="label"><span>Elden Ring</span></div>
+                                                    <h5><a href="{% url 'GalleryLeyndell' %}">La Capital Real Leyndell</a></h5>
+                                                    <ul>
+                                                        <li>by <span>Admin</span></li>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 20</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-6.png' %}">
+                                                            <div class="label"><span>Elden Ring</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryNokron' %}">El Palacio de Nokron</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-2" role="tabpanel">
+                                <div class="row">
+                                    <div class="un-slider owl-carousel">
+                                        <div class="col-lg-12">
+                                            <div class="un-big-item set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-1.png' %}">
+                                                <div class="ub-text">
+                                                    <div class="label"><span>Dark Souls</span></div>
+                                                    <h5><a href="{% url 'postgallery' %}">Irithyll del Valle Boreal</a></h5>
+                                                    <ul>
+                                                        <li>by <span>Admin</span></li>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 20</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-2.png' %}">
+                                                            <div class="label"><span>Dark Souls</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryAnor' %}">Anor Londo</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-3.png' %}">
+                                                            <div class="label"><span>Dark Souls</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryAriandel' %}">Cenizas de Ariandel</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-4.png' %}">
+                                                            <div class="label"><span>Dark Souls</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryAmana' %}">Santuario de Amana</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-3" role="tabpanel">
+                                <div class="row">
+                                    <div class="un-slider owl-carousel">
+                                        <div class="col-lg-12">
+                                            <div class="un-big-item set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-5.jpg' %}">
+                                                <div class="ub-text">
+                                                    <div class="label"><span>Elden Ring</span></div>
+                                                    <h5><a href="{% url 'GalleryLeyndell' %}">La Capital Real Leyndell</a></h5>
+                                                    <ul>
+                                                        <li>by <span>Admin</span></li>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 20</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="un-item">
+                                                        <div class="un_pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-6.png' %}">
+                                                            <div class="label"><span>Elden Ring</span></div>
+                                                        </div>
+                                                        <div class="un_text">
+                                                            <h6><a href="{% url 'GalleryNokron' %}">El Palacio de Nokron</a></h6>
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                                <li><i class="fa fa-comment-o"></i> 20</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar-option">
+                        <div class="social-media">
+                            <div class="section-title">
+                                <h5>Redes Sociales</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-facebook"></i></div>
+                                    <span class="text-white"><a href="https://es-la.facebook.com/fromsoftware.jp/about/">Facebook</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="bi bi-twitter-x"></i></div>
+                                    <span class="text-white"><a href="https://x.com/fromsoftware_pr?lang=es">Twitter</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-youtube-play"></i></div>
+                                    <span class="text-white"><a href="https://www.youtube.com/user/FromSoftwareInc">Youtube<a/></span>
+                                    <div class="follow">2,3k Subs</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-instagram"></i></div>
+                                    <span><a class="text-white" href="https://www.instagram.com/fromsoftware_jp/?hl=es">Instagram</a></span>
+                                    <div class="follow">2,6k Follow</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Update News Section End -->
+
+    <!-- Videos Guide Section Begin -->
+    <section class="video-guide-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h5>Noticias y Tendencias</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-elem">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tabs-5" role="tab">Todas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">Elden Ring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-7" role="tab">Dark Souls</a>
+                    </li>
+                </ul><!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tabs-5" role="tabpanel">
+                        <div class="row">
+                            <div class="vg-slider owl-carousel">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-1.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=qLZenOn7WUo"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Gameplay Reveal Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i>Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i>12</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-3.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=M-Xh4vbs6go"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Launch Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 10</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-2.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=6uT8wGtB3yQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING Shadow of the Erdtree | Story Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-4.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=AKXiKBnzpBQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING | Official Launch Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-5.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=JldMvQMO_5U"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING - Gameplay Preview</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-1.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=qLZenOn7WUo"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Gameplay Reveal Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i>Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i>12</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-3.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=M-Xh4vbs6go"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Launch Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 10</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-2.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=6uT8wGtB3yQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING Shadow of the Erdtree | Story Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-4.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=AKXiKBnzpBQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING | Official Launch Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-5.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=JldMvQMO_5U"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING - Gameplay Preview</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-6" role="tabpanel">
+                        <div class="row">
+                            <div class="vg-slider owl-carousel">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-1.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=qLZenOn7WUo"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Gameplay Reveal Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i>Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i>12</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-3.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=M-Xh4vbs6go"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Launch Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 10</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-2.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=6uT8wGtB3yQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING Shadow of the Erdtree | Story Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-4.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=AKXiKBnzpBQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING | Official Launch Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-5.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=JldMvQMO_5U"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING - Gameplay Preview</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-1.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=qLZenOn7WUo"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Gameplay Reveal Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i>Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i>12</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-3.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=M-Xh4vbs6go"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Launch Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 10</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-2.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=6uT8wGtB3yQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING Shadow of the Erdtree | Story Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-4.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=AKXiKBnzpBQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING | Official Launch Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-5.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=JldMvQMO_5U"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING - Gameplay Preview</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-7" role="tabpanel">
+                        <div class="row">
+                            <div class="vg-slider owl-carousel">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-1.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=qLZenOn7WUo"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Gameplay Reveal Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i>Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i>12</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="vg-item large-vg set-bg" data-setbg="{% static 'core/img/videos/elden-3.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=M-Xh4vbs6go"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h5>ELDEN RING Shadow of the Erdtree | Official Launch Trailer</h5>
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                                        <li><i class="fa fa-comment-o"></i> 10</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-2.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=6uT8wGtB3yQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING Shadow of the Erdtree | Story Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-4.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=AKXiKBnzpBQ"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING | Official Launch Trailer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="vg-item set-bg" data-setbg="{% static 'core/img/videos/elden-5.jpg' %}">
+                                                <a href="https://www.youtube.com/watch?v=JldMvQMO_5U"
+                                                    class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                                <div class="vg-text">
+                                                    <h6>ELDEN RING - Gameplay Preview</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Videos Guide Section End -->
+
+{% endblock %}

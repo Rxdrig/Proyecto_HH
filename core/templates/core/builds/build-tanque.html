@@ -1,0 +1,291 @@
+{% extends 'core/base.html' %} {% load static %} {% block titlepage %} Build de
+Silmeria Valkyrie {% endblock %} {% block principal %}
+
+<!-- Details Hero Section Begin -->
+<section
+  class="details-hero-section set-bg"
+  data-setbg="{% static 'core/img/details/build-banner.jpg' %}"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="details-hero-text">
+          <div class="label"><span>Dark Souls I</span></div>
+          <h3>Build: Tanque Real</h3>
+          <ul>
+            <li>by <span>Comunidad</span></li>
+            <li><i class="fa fa-clock-o"></i> Nov 11, 2024</li>
+            <li><i class="fa fa-comment-o"></i> 20</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Details Hero Section End -->
+
+<!-- Details Post Section Begin -->
+<section class="details-post-section spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 p-0">
+        <div class="details-text">
+          <div class="dt-desc mb-5">
+            <div class="section-title">
+                <h5>Descripción</h5>
+            </div>
+            <p></p>
+            <p><strong>Nombre de la Build:</strong> Tanque Real</p>
+            <p><strong>Nivel de Build:</strong> 101 (105)</p>
+            <p><strong>Enfoque de Build:</strong> PvE</p>
+            <p><strong>Clase:</strong> Bandit</p>
+            <p><strong>Regalo Inicial:</strong> Llave Maestra</p>
+            <p>
+                Esta es una versión creada por jugadores para Dark Souls. Si quieres ayuda para crear tu propia versión.
+            </p>
+          </div>
+          <div class="dt-pic-item">
+            <div class="dp-pic">
+              <img src="{% static 'core/img/builds/tanque-1.png' %}" alt="" />
+            </div>
+            <div class="dp-text mt-5">
+                <div class="section-title">
+                    <h5>Armas</h5>
+                </div>
+              <ul>
+                <li><strong>Mano derecha:</strong> Gran espada  +15 (rayo +5) / Dos manos Rayo  +5 /  Gran hacha del demonio  +15.</li>
+                <li><strong>Mano izquierda:</strong> Gran escudo de Havel</li>
+              </ul>
+                <div class="section-title mt-5">
+                    <h5>Anillos</h5>
+                </div>
+              <ul>
+                <li><strong>Anillo de Havel:</strong> (necesita aumentar de peso)</li>
+                <li><strong>Anillo de protección de acero  /  Anillo de placa de piedra de hechizo:</strong> (depende de la situación).</li>
+                <li><strong>Anillo de serpiente dorada codiciosa:</strong> (cultivo de humanidad/titanita).</li>
+                <li><strong>Anillo de serpiente de plata codiciosa :</strong> (cultivo de almas).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dt-pic-item">
+            <div class="dp-text mt-5">
+                <div class="section-title">
+                    <h5>Armaduras</h5>
+                </div>
+              <ul>
+                <li><strong>Primer conjunto que se puede obtener:</strong> Conjunto de Havel.</li>
+                <li><strong>Segundo conjunto a obtener:</strong> Conjunto Hierro Negro.</li>
+                <li><strong>Tercer conjunto a obtener:</strong> Conjunto del gigante.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dt-pic-item">
+            <div class="dp-text mt-5 mb-5">
+                <div class="section-title">
+                    <h5>Estrategia de construcción</h5>
+                </div>
+              <ul>
+                <li>Las configuraciones de tanque no se basan en la velocidad, pero sí en la defensa dura. Si te gusta esquivar, esta no es la configuración para ti.</li>
+                <li>los tanques necesitan HP, así que cuanto más HP tengas, mejor. Al final, te parecerás a Havel hasta que elijas parecerte a Tarkus.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dt-tags">
+            <a href="#"><span>Gaming</span></a>
+            <a href="#"><span>Builds</span></a>
+            <a href="#"><span>Dark Souls</span></a>
+        </div>
+        <div class="dt-related-post">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="{% url 'builds' %}" class="rp-prev">
+                        <span>Volver a Builds</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-7">
+    <div class="sidebar-option">
+        <div class="social-media">
+            <div class="section-title">
+                <h5>Redes Sociales</h5>
+            </div>
+            <ul>
+                <li>
+                    <div class="sm-icon"><i class="fa fa-facebook"></i></div>
+                    <span class="text-white"><a href="https://es-la.facebook.com/fromsoftware.jp/about/">Facebook</a></span>
+                    <div class="follow">1,2k Follow</div>
+                </li>
+                <li>
+                    <div class="sm-icon"><i class="bi bi-twitter-x"></i></div>
+                    <span class="text-white"><a href="https://x.com/fromsoftware_pr?lang=es">Twitter</a></span>
+                    <div class="follow">1,2k Follow</div>
+                </li>
+                <li>
+                    <div class="sm-icon"><i class="fa fa-youtube-play"></i></div>
+                    <span class="text-white"><a href="https://www.youtube.com/user/FromSoftwareInc">Youtube<a/></span>
+                    <div class="follow">2,3k Subs</div>
+                </li>
+                <li>
+                    <div class="sm-icon"><i class="fa fa-instagram"></i></div>
+                    <span><a class="text-white" href="https://www.instagram.com/fromsoftware_jp/?hl=es">Instagram</a></span>
+                    <div class="follow">2,6k Follow</div>
+                </li>
+            </ul>
+        </div>
+        <div class="hardware-guides">
+            <div class="section-title">
+                <h5>Builds Destacadas</h5>
+            </div>
+            <div class="trending-item">
+                <div class="ti-pic">
+                    <img src="{% static 'core/img/builds/alastor-build.png' %}" alt="" style="max-width: 70px;">
+                </div>
+                <div class="ti-text">
+                    <h6><a href="{% url 'buildsAlastor' %}">Alastor</a>
+                    </h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trending-item">
+                <div class="ti-pic">
+                    <img src="{% static 'core/img/builds/silmeria-build.png' %}" alt="" style="max-width: 70px;">
+                </div>
+                <div class="ti-text">
+                    <h6><a href="{% url 'buildsSilmeria' %}">Silmeria Valkyrie</a></h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trending-item">
+                <div class="ti-pic">
+                    <img src="{% static 'core/img/builds/reaper-build.png' %}" alt=""
+                        style="max-width: 70px;">
+                </div>
+                <div class="ti-text">
+                    <h6><a href="{% url 'buildsReaper' %}">Grim Reaper</a>
+                    </h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trending-item">
+                <div class="ti-pic">
+                    <img src="{% static 'core/img/builds/belldany-build.png' %}" alt=""
+                        style="max-width: 70px;">
+                </div>
+                <div class="ti-text">
+                    <h6><a href="{% url 'buildsBelldandy' %}">Belldandy</a></h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 12</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="insta-media">
+            <div class="section-title">
+                <h5>Instagram</h5>
+            </div>
+            <div class="insta-pic">
+                <img src="{% static 'core/img/instagram/ip-1.jpg' %}" alt="">
+                <img src="{% static 'core/img/instagram/ip-2.jpg' %}" alt="">
+                <img src="{% static 'core/img/instagram/ip-3.jpg' %}" alt="">
+                <img src="{% static 'core/img/instagram/ip-4.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="best-of-post">
+            <div class="section-title">
+                <h5>Builds Mejor Valoradas</h5>
+            </div>
+            <div class="bp-item">
+                <div class="bp-loader">
+                    <div class="loader-circle-wrap">
+                        <div class="loader-circle">
+                            <span class="circle-progress-1" data-cpid="id-1" data-cpvalue="95"
+                                data-cpcolor="#c20000"></span>
+                            <div class="review-point">9.5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bp-text">
+                    <h6><a href="#">Alastor</a></h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 20</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bp-item">
+                <div class="bp-loader">
+                    <div class="loader-circle-wrap">
+                        <div class="loader-circle">
+                            <span class="circle-progress-1" data-cpid="id-2" data-cpvalue="85"
+                                data-cpcolor="#c20000"></span>
+                            <div class="review-point">8.5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bp-text">
+                    <h6><a href="#">Silmeria Valkyrie</a></h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 20</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bp-item">
+                <div class="bp-loader">
+                    <div class="loader-circle-wrap">
+                        <div class="loader-circle">
+                            <span class="circle-progress-1" data-cpid="id-3" data-cpvalue="80"
+                                data-cpcolor="#c20000"></span>
+                            <div class="review-point">8.0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bp-text">
+                    <h6><a href="#">Grim Reaper</a></h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 20</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bp-item">
+                <div class="bp-loader">
+                    <div class="loader-circle-wrap">
+                        <div class="loader-circle">
+                            <span class="circle-progress-1" data-cpid="id-4" data-cpvalue="75"
+                                data-cpcolor="#c20000"></span>
+                            <div class="review-point">7.5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bp-text">
+                    <h6><a href="#">Belldandy</a></h6>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                        <li><i class="fa fa-comment-o"></i> 20</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Post Section End -->
+
+{% endblock %}

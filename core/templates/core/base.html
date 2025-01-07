@@ -1,0 +1,324 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Amin Template">
+    <meta name="keywords" content="Amin, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block titlepage %}  {% endblock %}</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'core/img/favicon.ico' %}" type="favicon-HH">
+</head>
+<body>
+    <!-- Page Preloder -->
+    <!-- <div id="preloder"> 
+        <div class="loader"></div>
+    </div> -->
+
+    <!-- Humberger Menu Begin -->
+    <div class="humberger-menu-overlay"></div>
+    <div class="humberger-menu-wrapper">
+        <div class="hw-logo">
+            <a href="#">
+                <div class="section-title">
+                    <h5>Hermandad de la Hoguera</h5>
+                </div>
+            </a>
+        </div>
+        <div class="hw-menu mobile-menu">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="#">Principal <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'contacto' %}">Feedback</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Builds<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'builds' %}">Dark Souls I</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'categoriassouls' %}">Dark Souls</a></li>
+                        <li><a href="{% url 'categoriaselden' %}">Elden Ring</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'comunidad' %}">Comunidad</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="hw-copyright">
+            Copyright © 2024 Hermandad de la Hoguera
+        </div>
+        <div class="hw-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Humberger Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="ht-options">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="ht-widget">
+                            <ul>
+                                <li><p>Hermandad de la Hoguera</p></li>
+                                {% if request.session.correo_electronico %}
+                                    <li><span class="d-flex align-items-center">
+                                        <i class="bi bi-person-fill me-1 text-light"></i>
+                                        <p class="text-light mb-0">{{ request.session.correo_electronico }}</p>
+                                    </span></li> 
+                                    &nbsp;&nbsp; 
+                                    <li class="signup-switch signup-open"><a href="{% url 'logout' %}" class="text-light"><i class="bi bi-person-fill-x"></i>Cerrar Sesión</a></li>
+                                {% else %}
+                                    <li class="login-switch login-open"><i class="bi bi-person me-1 text-light"></i>Login</li>
+                                    <li class="signup-switch signup-open"><i class="fa fa-sign-out"></i>Regístrate</li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="ht-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-white">
+                        <a href="{% url 'index' %}"><h2><strong>Hermandad de la Hoguera</strong></h2></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-options">
+            <div class="container">
+                <div class="humberger-menu humberger-open">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="nav-menu">
+                    <ul>
+                        <li class="active"><a href="{% url 'index' %}"><span>Inicio</span></a></li>
+                        <li>
+                            <a href="#"><span>Principal<i class="fa fa-angle-down"></i></span></a>
+                            <ul class="dropdown">
+                                <li><a href="{% url 'contacto' %}">Feedback</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Builds<i class="fa fa-angle-down"></i></span></a>
+                            <ul class="dropdown">
+                                <li><a href="{% url 'builds' %}">Dark Souls I</a></li>                                
+                            </ul>    
+                        </li>
+                        <li><a href="#"><span>Galeria<i class="fa fa-angle-down"></i></span></a>
+                            <ul class="dropdown">
+                                <li><a href="{% url 'categoriassouls' %}">Dark Souls</a></li>
+                                <li><a href="{% url 'categoriaselden' %}">Elden Ring</a></li>                                 
+                            </ul>                         
+                        </li>
+                        <li><a href="{% url 'comunidad' %}"><span>Comunidad</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    {% block principal %}
+
+    {% endblock %}
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <div class="section-title">
+                            <h5>Hermandad de la Hoguera</h5>
+                        </div>
+                        <p>Pagina enfocada a la comunidad de from software, unete a la experiencia!</p>
+                        <div class="fa-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="editor-choice">
+                        <div class="ec-item">
+
+                        </div>
+                        <div class="ec-item">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tags-cloud">
+                        <div class="section-title">
+                            <h5>Tags Relacionados</h5>
+                        </div>
+                        <div class="tag-list">
+                            <a href="#"><span>Gaming</span></a>
+                            <a href="#"><span>Platform</span></a>
+                            <a href="#"><span>Playstation</span></a>
+                            <a href="#"><span>Hardware</span></a>
+                            <a href="#"><span>Reviews</span></a>
+                            <a href="#"><span>Simulation</span></a>
+                            <a href="#"><span>Strategy</span></a>
+                            <a href="#"><span>Scientific</span></a>
+                            <a href="#"><span>References</span></a>
+                            <a href="#"><span>Role-playing</span></a>
+                            <a href="#"><span>Adventurea</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ca-text"><p>Proyecto | Hermandad de la Hoguera</p></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ca-links">
+                            <a href="#">Dilan Huenubil</a>
+                            <a href="#">Rodrigo Mella</a>
+                            <a href="#">Raúl Jiménez</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Sign Up Section Begin -->
+    <div class="signup-section"> 
+        <div class="signup-close"><i class="fa fa-close"></i></div>
+        <div class="signup-text">
+            <div class="container">
+                <div class="signup-title">
+                    <h2>Registrate</h2>
+                    <p>Conviértete en miembro de nuestra comunidad y accede a contenido único que te ayudará a mejorar tus habilidades en los juegos de FromSoftware. ¡La aventura comienza aquí!</p>
+                </div>
+                <!-- Formulario modificado para manejar errores y mantener datos -->
+                <form action="{% url 'registrarUsuario' %}" class="signup-form" method="POST" enctype="multipart/form-data">{% csrf_token %}
+                    <div class="sf-input-list">
+                        <!-- Entradas de formulario con valores previos (si hay errores) -->
+                        <div class="input-group">
+                            <input type="text" id="textNombre" name="textNombre" class="input-value" placeholder="Nombre" value="{{ data.textNombre|default:'' }}" required>
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="textPassword" name="textPassword" class="input-value" placeholder="Contraseña" required>
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="textPassword2" name="textPassword2" class="input-value" placeholder="Confirmar Contraseña" required>
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="textCorreo" name="textCorreo" class="input-value" placeholder="Correo electrónico" value="{{ data.textCorreo|default:'' }}" required>
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="textUsuario" name="textUsuario" class="input-value" placeholder="Nombre de Usuario" value="{{ data.textUsuario|default:'' }}" required>
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                        <div class="input-group">
+                            <input type="file" id="textFoto" name="textFoto" class="input-value" placeholder="Subir Foto de Perfil">
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                    </div>
+                    <div class="radio-check">
+                        <label for="rc-agree">Estoy de acuerdo con los términos y condiciones.
+                            <input type="checkbox" id="rc-agree" required>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <button type="submit"><span>REGÍSTRATE AHORA</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Section End -->
+
+    <!-- Login Section Begin -->
+    <div class="login-section">
+        <div class="login-close"><i class="fa fa-close"></i></div>
+        <div class="login-text">
+            <div class="container">
+                <div class="login-title">
+                    <h2>Iniciar Sesión</h2>
+                    <p>Accede a tu cuenta y disfruta de contenido único para mejorar tu experiencia en los juegos de FromSoftware.</p>
+                </div>
+                <form id="loginForm" action="{% url 'login' %}" class="login-form" method="POST">
+                    {% csrf_token %}
+                    <div class="lf-input-list">
+                        <div class="input-group">
+                            <input type="email" class="input-value" placeholder="Correo electrónico" name="correo" required>
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                        <div class="input-group">
+                            <input type="password" class="input-value" placeholder="Contraseña" name="password" required>
+                            <span class="error-message" style="color: red; display: none;"></span> <!-- Contenedor del mensaje de error -->
+                        </div>
+                    </div>
+                    <button type="submit"><span>INICIAR SESIÓN</span></button>
+                    <p class="signup-link">¿No tienes cuenta? <a href="#" class="switch-to-signup">Regístrate aquí</a></p>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+
+
+
+
+    <script src="{% static 'core/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'core/js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'core/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'core/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'core/js/main.js' %}"></script>
+    <script src="{% static 'core/js/funcionalidades.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

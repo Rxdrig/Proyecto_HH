@@ -1,0 +1,132 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block titlepage %}
+Galeria | Dark Souls
+{% endblock %}
+
+{% block principal %}
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg spad" data-setbg="{% static 'core/img/breadcrumb-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h3>Dark Souls: <span>Explorando el Arte del Juego</span></h3>
+                        <div class="bt-option">
+                            <a href="{% url 'index' %}">Home</a>
+                            <span>Galeria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Categories Grid Section Begin -->
+    <section class="categories-grid-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 p-0">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cg-item">
+                                <div class="cg-pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-1.png' %}">
+                                    <div class="label"><span>Dark Souls III</span></div>
+                                </div>
+                                <div class="cg-text">
+                                    <h5><a href="{% url 'postgallery' %}">Irithyll del Valle Boreal</a></h5>
+                                    <ul>
+                                        <li>by <span>Admin</span></li>
+                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2024</li>
+                                    </ul>
+                                    <p>Irithyll es una antigua ciudad, situada en el frío Valle Boreal. En el centro hay una gran catedral dedicada al juramento de la Luna Oscura.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cg-item">
+                                <div class="cg-pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-2.png' %}">
+                                    <div class="label"><span>Dark Souls I</span></div>
+                                </div>
+                                <div class="cg-text">
+                                    <h5><a href="{% url 'GalleryAnor' %}">Anor Londo</a></h5>
+                                    <ul>
+                                        <li>by <span>Admin</span></li>
+                                        <li><i class="fa fa-clock-o"></i> Nov 15, 2024</li>
+                                    </ul>
+                                    <p> Anor Londo es la legendaria ciudad de los dioses. Era el centro de poder del Gran Señor Gwyn y su clan. Desde que Gwyn enlazó la Primera Llama, la ciudad ha sido abandonada por los otros dioses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cg-item">
+                                <div class="cg-pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-3.png' %}">
+                                    <div class="label"><span>Dark Souls III</span></div>
+                                </div>
+                                <div class="cg-text">
+                                    <h5><a href="{% url 'GalleryAriandel' %}">Cenizas de Ariandel</a></h5>
+                                    <ul>
+                                        <li>by <span>Admin</span></li>
+                                        <li><i class="fa fa-clock-o"></i> Nov 5, 2024</li>
+                                    </ul>
+                                    <p>Cenizas de Ariandel es el primero de los dos DLCs de Dark Souls 3. Se trata de un contenido que no agrega simples novedades en cuanto a equipo, sino que añade una nueva región.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cg-item">
+                                <div class="cg-pic set-bg" data-setbg="{% static 'core/img/categories-grid/galeria-4.png' %}">
+                                    <div class="label"><span>Dark Souls II</span></div>
+                                </div>
+                                <div class="cg-text">
+                                    <h5><a href="{% url 'GalleryAmana' %}">Santuario de Amana</a></h5>
+                                    <ul>
+                                        <li>by <span>Admin</span></li>
+                                        <li><i class="fa fa-clock-o"></i> Aug 01, 2019</li>
+                                    </ul>
+                                    <p>El Santuario de Amana es una enorme caverna inundada, llena de pilares y arcos en ruinas.  es un buen lugar para farmear Titanita centelleante, ya que la sueltan la mayoría de los enemigos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 p-0">
+                    <div class="sidebar-option">
+                        <div class="social-media">
+                            <div class="section-title">
+                                <h5>Redes Sociales</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-facebook"></i></div>
+                                    <span class="text-white"><a href="https://es-la.facebook.com/fromsoftware.jp/about/">Facebook</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="bi bi-twitter-x"></i></div>
+                                    <span class="text-white"><a href="https://x.com/fromsoftware_pr?lang=es">Twitter</a></span>
+                                    <div class="follow">1,2k Follow</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-youtube-play"></i></div>
+                                    <span class="text-white"><a href="https://www.youtube.com/user/FromSoftwareInc">Youtube<a/></span>
+                                    <div class="follow">2,3k Subs</div>
+                                </li>
+                                <li>
+                                    <div class="sm-icon"><i class="fa fa-instagram"></i></div>
+                                    <span><a class="text-white" href="https://www.instagram.com/fromsoftware_jp/?hl=es">Instagram</a></span>
+                                    <div class="follow">2,6k Follow</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Grid Section End -->
+{% endblock %}
